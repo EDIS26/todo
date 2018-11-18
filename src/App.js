@@ -38,7 +38,7 @@ class App extends Component {
         <form ref="formulir" className="form-inline">
           <input type="text" className="form-control" size="8" ref="jam" placeholder="jam aktivitas" />
           <input type="text" className="form-control" size="30" ref="aktivitas" placeholder="jenis aktivitas" />
-          <button onClick={this.addTodo} className="btn btn-info">simpan</button>
+          <button onClick={this.addTodo} className="btn btn-info">Save</button>
         </form>
         <hr />
       <div>
@@ -52,7 +52,7 @@ class App extends Component {
           {this.state.todos.map((data, i) =>
             <li key={i}>
               <div className="todo-wrapper">
-                <button onClick={()=>this.removeTodo(i)} className="btn btn-outline-danger">hapus</button> {data.jam} : {data.aktivitas}
+                <button onClick={()=>this.removeTodo(i)} className="btn btn-outline-danger">Delete</button> {data.jam} : {data.aktivitas}
               </div>
             </li>
           )}
