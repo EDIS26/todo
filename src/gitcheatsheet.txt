@@ -1,0 +1,31 @@
+#Generate SSH:
+cd ~/.ssh && ssh-keygen
+cat id_rsa.pub | clip
+
+#Create New Repo:
+git status
+git init
+git add .
+git commit -m "komentar"
+git remote add origin git@github.com:EDIS26/todo.git
+git push origin BRANCH 
+
+#Pull Repo:
+git status
+git init
+git pull git@github.com:EDIS26/todo.git
+
+#View Log commit
+git log (view commit log)
+git log --oneline (View summary Commit)
+
+#Create New Branch:
+git checkout -B NAMABRANCH
+git checkout NAMABRANCH (Switch To Other Branches)
+git branch (to check branch position)
+
+#Change Credentials:
+git config --global user.name "EDIS26"
+git config --global user.email "EDIS26@example.com"
+git config --global user.name (check credentials)
+git config --global user.email (check credentials)
